@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tambah Produk Baru</title>
+</head>
+<body>
+    <h1>Tambah Produk Baru</h1>
+    <form method="post" action="/products/add">
+        <label for="name">Nama Produk:</label>
+        <input type="text" name="name" required><br>
+
+        <label for="price">Harga:</label>
+        <input type="number" name="price" required><br>
+
+        <label for="stock">Stok:</label>
+        <input type="number" name="stock" required><br>
+
+        <input type="submit" value="Tambah Produk">
+    </form>
+</body>
+</html>

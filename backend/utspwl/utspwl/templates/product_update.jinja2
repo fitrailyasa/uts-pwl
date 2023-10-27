@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Perbarui Produk</title>
+</head>
+<body>
+    <h1>Perbarui Produk</h1>
+    <form method="post" action="/products/update/{{ product.id }}">
+        <label for="name">Nama Produk:</label>
+        <input type="text" name="name" value="{{ product.name }}" required><br>
+
+        <label for="price">Harga:</label>
+        <input type="number" name="price" value="{{ product.price }}" required><br>
+
+        <label for="stock">Stok:</label>
+        <input type="number" name="stock" value="{{ product.stock }}" required><br>
+
+        <input type="submit" value="Perbarui Produk">
+    </form>
+</body>
+</html>

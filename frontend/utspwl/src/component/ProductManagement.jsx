@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { addProduct, deleteProduct, updateProduct } from './api'; // Gantilah dengan impor yang sesuai
+import { addProduct, deleteProduct, updateProduct } from '../api/api'; // Gantilah dengan impor yang sesuai
 
 function ProductManagement() {
     const [newProduct, setNewProduct] = useState({

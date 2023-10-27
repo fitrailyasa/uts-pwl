@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
-import ProductList from './components/ProductList';
-import ProductDetails from './components/ProductDetails';
-import ProductManagement from './components/ProductManagement';
+import ProductList from './component/ProductList';
+import ProductDetails from './component/ProductDetails';
+import ProductManagement from './component/ProductManagement';
 
 function AppRouter() {
     return (

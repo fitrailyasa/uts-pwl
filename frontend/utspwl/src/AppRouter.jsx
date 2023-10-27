@@ -1,17 +1,15 @@
-// AppRouter.js
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import ProductList from './component/ProductList';
-import ProductDetails from './component/ProductDetails';
+import { Route, Routes } from 'react-router-dom';
+import ProductList from './components/ProductList';
+import ProductDetails from './components/ProductDetails';
+import ProductManagement from './components/ProductManagement';
 
 function AppRouter() {
     return (
-        <Router>
-            <Switch>
-                <Route path="/" exact component={ProductList} />
-                <Route path="/products/:id" component={ProductDetails} />
-            </Switch>
-        </Router>
+        <Routes>
+            <Route path="/" element={<ProductList />} />
+            <Route path="/products/:productId" element={<ProductDetails />} />
+            <Route path="/product-management" element={<ProductManagement />} />
+        </Routes>
     );
 }
 
